@@ -37,6 +37,10 @@ class Deck
 		return array_splice($this->cards, -$n);
 	}
 
+	/**
+	 * Fills all cards of all suits in the deck
+	 *
+	 */
 	private function fillCards(): array
 	{
 		$cardsDeck = array();

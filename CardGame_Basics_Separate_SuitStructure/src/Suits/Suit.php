@@ -30,6 +30,10 @@ class Suit
 		}
 	}
 
+	/**
+	 * Returns the card for a suit
+	 * @param  array|null $ranks - if no specific ranks are provided, will take all cards
+	 */
 	function take(array $ranks = null): array
 	{
 		$ranks = $ranks ?? Card::getRanks();
