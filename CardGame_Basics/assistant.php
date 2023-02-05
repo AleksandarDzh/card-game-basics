@@ -1,12 +1,16 @@
 <?php
 
-include 'vendor\\autoload.php';
+include 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 
 echo "Running tests!\n";
 
 class assistant
 {
-	private const CMD = ' .\vendor\bin\phpunit';
+	private const CMD = '.' .
+		DIRECTORY_SEPARATOR . 'vendor' .
+		DIRECTORY_SEPARATOR . 'bin' .
+		DIRECTORY_SEPARATOR . 'phpunit';
+
 	function __construct()
 	{
 		$output = array();
